@@ -1,38 +1,76 @@
+body {
+  background-color: #202329;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  color: lightgray;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style: number;
+}
+
+h1 {
+  margin-top: 4rem;
+}
+
+
+input {
+  padding: 10px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 200px;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.input-container {
+  margin-top: 2rem;
+}
+
+.create-room-button {
+  padding: 10px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  background-color: lightgreen;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-room-button:hover {
+  background-color: #45a049;
+}
+
+.rules-box {
+  margin: 0 auto;
+  width: 50%;
+  background-color: #131519;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 1rem;
+  border-radius: 4px;
 }

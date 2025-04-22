@@ -1,4 +1,5 @@
 import './App.css';
+import { COLORS } from './designtokens';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NewPlayerForm from './NewPlayerForm';
 import WaitingRoom from './WaitingRoom';
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Ultimate <span style={{color: "lightgreen"}}>Fizz</span><span style={{color: "yellow"}}>Buzz</span></h1>
+      <h1>Ultimate <span style={{color: COLORS.primary}}>Fizz</span><span style={{color: COLORS.secondary}}>Buzz</span></h1>
 
       <Router>
         <Routes>

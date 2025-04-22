@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { generateRoomId, savePlayer, createRoom } from './utils';
+import ToolTip from './ToolTip';
 
 function NewPlayerForm({ isJoining = false }) {
   console.log("ISJOINING IS", isJoining)
@@ -35,7 +36,8 @@ function NewPlayerForm({ isJoining = false }) {
         <div className="input-container">
             {isJoining && <h2><i>Joining Room {roomId}</i></h2>}
             <input type="text" placeholder="name" className="name-input" value={name} onChange={handleNameChange}/>
-            <button type="button" className="create-room-button" onClick={handleSubmit}>{isJoining ? 'Join Room' : 'Create Room'}</button>
+            <button style={{color: '#191c20;'}} type="button" className="create-room-button" onClick={handleSubmit}>{isJoining ? 'Join Room' : 'Create Room'}</button>
+            <br/><ToolTip/>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 body {
-  background-color: #202329;
+  background-color: #191c20;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -26,6 +26,10 @@ ul {
 
 h1 {
   margin-top: 4rem;
+}
+
+button {
+  font-weight: 800;
 }
 
 
@@ -73,4 +77,5 @@ input {
   color: white;
   padding: 1rem;
   border-radius: 4px;
+  
 }

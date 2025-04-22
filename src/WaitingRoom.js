@@ -14,7 +14,7 @@ function WaitingRoom() {
     const { roomId } = useParams();
     const navigate = useNavigate();
 
-    const joinUrl = `http://localhost:3000/join-room/${roomId}`;
+    const joinUrl = `${window.location.origin}/join-room/${roomId}`;
 
     const copyToClipboard = async () => {
         try {

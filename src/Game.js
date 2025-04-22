@@ -83,11 +83,10 @@ function Game() {
 
   const handleKeyDown = async (e) => {
     if (e.key === 'Enter' && inputValue.trim() !== '' && roomId) {
-        // changing turn before order causes answers to not get submitted sometimes
-        await updateRoomField(roomId, 'playerSubmittedAnswersForCurrentRound', inputValue.trim(), 'append')
-        await updateRoomField(roomId, 'turn', 1, 'increment')
+        let tempInputValue = inputValue.trim()
         setInputValue('')
-        
+        await updateRoomField(roomId, 'playerSubmittedAnswersForCurrentRound', tempInputValue, 'append')
+        await updateRoomField(roomId, 'turn', 1, 'increment')
     }
   }
 
